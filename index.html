@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sorting Algorithm Visualization</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading" onclick="window.location.reload()">
+        Sorting Visualizer
+        </h1>
+
+        <div class="navbar" id="navbar">
+            <span class="option">
+               <select name="sorting algo" id="sort-algo">
+                <option value="0">Select Sorting Algorithm</option>
+                <option value="1">Bubble Sort</option>
+                <option value="2">Insertion Sort </option>
+                <option value="3">Merge Sort</option>
+                <option value="4">Quick Sort</option>
+                <option value="5">Selection Sort</option>
+               </select>
+            </span>
+            <span class="option">
+                <select name="array size" id="arr-size">
+                    <option value="0">Select Array Size</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                </select>
+            </span>
+            <span class="option">
+                <select name="Visualization speed" id="vis-speed">
+                    <option value="0">Visualization Speed</option>
+                    <option value="0.5">0.5x</option>
+                    <option value="1.0">1.0x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2.0">2.0x</option>
+                    <option value="2.5">2.5x</option>
+                    <option value="3.0">3.0x</option>
+                </select>
+            </span>
+            <!-- <p class="size">Array Size:</p>
+            <input type="range" id="arr_size" min="10" max="100" step="1" value="90">
+            <p class="speed">Visualization Speed:</p>
+            <input type="range" id="arr_size" min="1" max="5" step="1" value="4"> -->
+        </div>
+        <div class="process">
+            <a id="random" onclick="RenderScreen()">Array Generation</a>
+            <a class="sorting">Sort Array</a>   
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="array"></div>
+    </div>
+
+    <section>
+        <div class="complexity">
+            <h3>Time Complexity</h3>
+            <div class="complex_container">
+                
+                <div class="complex">
+                    <p class="subHead">Best case:</p>
+                    <p id="Best"></p>
+                </div>
+
+                <div class="complex">
+                    <p class="subHead">Average case:</p>
+                    <p id="Average"></p>
+                </div>
+
+                <div class="complex">
+                    <p class="subHead">Worst case:</p>
+                    <p id="Worst"></p>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; 2022 - All rights reserved
+         </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/algorithm.js"></script>
+</body>
+</html>
